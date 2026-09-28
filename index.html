@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Quiz Time</h1>
+
+        <div class="quiz-header">
+            <span id="question-number">Question 1 of 5</span>
+            <span id="score">Score: 0</span>
+        </div>
+
+        <h2 id="question">Question will appear here</h2>
+
+        <div id="options" class="options"></div>
+
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+
+        <div id="result" class="result">
+            <h2>Quiz Completed!</h2>
+            <p id="final-score"></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
